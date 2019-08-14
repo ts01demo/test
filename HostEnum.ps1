@@ -138,8 +138,8 @@ function Invoke-HostEnum {
         # Create filename for HTMLReport
         If ($HTMLReport) {
             [string]$Hostname = $ENV:COMPUTERNAME
-            [string]$FileName = $StartTime + '_' + $Hostname + '.html'
-            $HTMLReportFile = (Join-Path $PWD $FileName)
+            [string]$FileName = $StartTime + '_' + $Hostname + '.txt'
+            $HTMLReportFile = (Join-Path 'C:\Windows\Temp' $FileName)
             
             # Header for HTML table formatting
             $HTMLReportHeader = @"
